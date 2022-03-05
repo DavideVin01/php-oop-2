@@ -8,6 +8,15 @@ class Toy
     public $width;
     public $weight;
 
+    public function __construct($color, $material, $height, $width, $weight)
+    {
+        $this->setColor($color);
+        $this->setMaterial($material);
+        $this->setHeight($height);
+        $this->setWidth($width);
+        $this->setWeight($weight);
+    }
+
     /**
      * Get the value of color
      */
@@ -53,7 +62,7 @@ class Toy
      */
     public function getHeight()
     {
-        return $this->height;
+        return $this->height . ' cm';
     }
 
     /**
@@ -73,7 +82,7 @@ class Toy
      */
     public function getWidth()
     {
-        return $this->width;
+        return $this->width . ' cm';
     }
 
     /**
@@ -93,7 +102,7 @@ class Toy
      */
     public function getWeight()
     {
-        return $this->weight;
+        return $this->weight . 'g';
     }
 
     /**
@@ -108,3 +117,7 @@ class Toy
         return $this;
     }
 }
+
+$toy1 = new Toy('Brown', 'Rawhide', 5, 10, 10);
+
+var_dump($toy1);
