@@ -11,6 +11,7 @@ class Toy
 
     public function __construct($toy_name, $color, $material, $height, $width, $weight)
     {
+        $this->setToyName($toy_name);
         $this->setColor($color);
         $this->setMaterial($material);
         $this->setHeight($height);
