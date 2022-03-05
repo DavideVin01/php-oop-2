@@ -12,13 +12,13 @@ class Product
 
     public function __construct($name, $code, $price, $quantity, $brand, $description, $animal)
     {
-        $this->name = $name;
-        $this->code = $code;
-        $this->price = $price;
-        $this->quantity = $quantity;
-        $this->brand = $brand;
-        $this->description = $description;
-        $this->animal = $animal;
+        $this->setName($name);
+        $this->setCode($code);
+        $this->setPrice($price);
+        $this->setQuantity($quantity);
+        $this->setBrand($brand);
+        $this->setDescription($description);
+        $this->setAnimal($animal);
     }
 
     // NAME
@@ -104,4 +104,3 @@ class Product
 $product1 = new Product('Croccantini', '82912', 10, 1, 'Monge', 'Croccantini per cani di stazza grande', 'cane');
 
 var_dump($product1);
-echo $product1->getPrice('£');
