@@ -81,7 +81,7 @@ class Toy
 
     public function getWeight()
     {
-        return $this->weight . 'g';
+        return $this->weight . 'gr';
     }
 
     public function setWeight($weight)
