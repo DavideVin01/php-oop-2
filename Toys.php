@@ -2,19 +2,32 @@
 
 class Toy
 {
+    public $toy_name;
     public $color;
     public $material;
     public $height;
     public $width;
     public $weight;
 
-    public function __construct($color, $material, $height, $width, $weight)
+    public function __construct($toy_name, $color, $material, $height, $width, $weight)
     {
         $this->setColor($color);
         $this->setMaterial($material);
         $this->setHeight($height);
         $this->setWidth($width);
         $this->setWeight($weight);
+    }
+
+    public function getToyName()
+    {
+        return $this->toy_name;
+    }
+
+    public function setToyName($toy_name)
+    {
+        $this->toy_name = $toy_name;
+
+        return $this;
     }
 
     public function getColor()
@@ -78,6 +91,6 @@ class Toy
     }
 }
 
-$toy1 = new Toy('Brown', 'Rawhide', 5, 10, 10);
+$toy1 = new Toy('Bone', 'Gray', 'Rawhide', 5, 10, 10);
 
 var_dump($toy1);
