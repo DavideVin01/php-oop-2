@@ -17,19 +17,11 @@ class Toy
         $this->setWeight($weight);
     }
 
-    /**
-     * Get the value of color
-     */
     public function getColor()
     {
         return $this->color;
     }
 
-    /**
-     * Set the value of color
-     *
-     * @return  self
-     */
     public function setColor($color)
     {
         $this->color = $color;
@@ -37,19 +29,11 @@ class Toy
         return $this;
     }
 
-    /**
-     * Get the value of material
-     */
     public function getMaterial()
     {
         return $this->material;
     }
 
-    /**
-     * Set the value of material
-     *
-     * @return  self
-     */
     public function setMaterial($material)
     {
         $this->material = $material;
@@ -57,19 +41,11 @@ class Toy
         return $this;
     }
 
-    /**
-     * Get the value of height
-     */
     public function getHeight()
     {
         return $this->height . ' cm';
     }
 
-    /**
-     * Set the value of height
-     *
-     * @return  self
-     */
     public function setHeight($height)
     {
         $this->height = $height;
@@ -77,19 +53,11 @@ class Toy
         return $this;
     }
 
-    /**
-     * Get the value of width
-     */
     public function getWidth()
     {
         return $this->width . ' cm';
     }
 
-    /**
-     * Set the value of width
-     *
-     * @return  self
-     */
     public function setWidth($width)
     {
         $this->width = $width;
@@ -97,19 +65,11 @@ class Toy
         return $this;
     }
 
-    /**
-     * Get the value of weight
-     */
     public function getWeight()
     {
         return $this->weight . 'g';
     }
 
-    /**
-     * Set the value of weight
-     *
-     * @return  self
-     */
     public function setWeight($weight)
     {
         $this->weight = $weight;
